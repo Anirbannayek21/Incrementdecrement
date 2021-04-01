@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import Button from './Button';
+import PlusOneIcon from '@material-ui/icons/PlusOne';
+import ExposureNeg1Icon from '@material-ui/icons/ExposureNeg1';
 
 function App() {
 
@@ -27,8 +29,8 @@ function App() {
           <div className="box1">
             <h1>{number}</h1>
             <div>
-              <Button text="INC" bcolor="#3333ff" onSelect={increament} />
-              <Button text="DEC" bcolor="#ff3300"
+              <Button text={<PlusOneIcon/>} bcolor="#3333ff" onSelect={increament} />
+              <Button text={<ExposureNeg1Icon/>} bcolor="#ff3300"
                 onSelect={decreament} />
             </div>
           </div>
